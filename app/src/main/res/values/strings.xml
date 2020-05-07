@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Smarter</string>
+    <string name="smarter">SMARTER</string>
+    <string name="continue_using">Continue Using</string>
+    <string name="your_life_easier">Your life easier</string>
+    <string name="automated_phone_mode">Automated Phone Mode</string>
+    <string name="automated_drive_mode">Automated Drive Mode</string>
+    <string name="note">Note</string>
+    <string name="timeline">timeline</string>
+    <string name="setting">setting</string>
+    <string name="lang">lang</string>
+    <string name="mode">Mode</string>
+    <string name="notification">Notification</string>
+    <string name="button">Button</string>
+    <string name="count">1</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="srg">search</string>
+    <string name="srg2">Search Location</string>
+    <string name="dropped_pin" />
+    <string name="a">type</string>
+    <string name="b">date</string>
+    <string name="c">tayping</string>
+    <string name="No_Apps">No apps</string>
+    <string-array name="spinner_app_type">
+        <item>User Apps</item>
+        <item>System Apps</item>
+    </string-array>
+    <string name="notification_schedule_title">Schedule notification:\u00a0</string>
+    <string name="notification_schedule_pattern">dd.MM.yy \u00B7 HH:mm</string>
+
+
+    <string name="channel_name">Channel_name</string>
+    <string name="channel_description">Channel_description</string>
+    <string name="activity_in_vehicle">In Vehicle</string>
+    <string name="activity_on_bicycle">On Bicycle</string>
+    <string name="activity_on_foot">On Foot</string>
+    <string name="activity_running">Running</string>
+    <string name="activity_still">Still</string>
+    <string name="activity_tilting">Tilting</string>
+    <string name="activity_walking">walking</string>
+    <string name="activity_unknown">Unknown</string>
+</resources>

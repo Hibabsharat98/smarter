@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".phonemode">
+
+    <TextView
+        android:id="@+id/header2"
+        android:layout_width="0dp"
+        android:layout_height="75pt"
+        android:background="?attr/backgroundhedar"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/titlephonemode"
+        android:layout_width="220dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="35dp"
+        android:paddingLeft="13dp"
+        android:text="Automated"
+        android:textColor="#FFFFFF"
+        android:textSize="18pt"
+        app:fontFamily="casual"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/captionphonemode"
+        android:layout_width="167dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:paddingLeft="13dp"
+        android:text="Phone Mode"
+        android:textColor="#FFFFFF"
+        android:textSize="11pt"
+        app:fontFamily="casual"
+        app:layout_constraintEnd_toStartOf="@+id/logephonemode"
+        app:layout_constraintHorizontal_bias="0.22"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titlephonemode" />
+
+    <ImageView
+        android:id="@+id/logephonemode"
+
+        android:layout_width="45pt"
+        android:layout_height="45pt"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginRight="35dp"
+        app:layout_constraintBottom_toBottomOf="@+id/header2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/titlephonemode"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/phonemode11" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="?attr/backgroundbody"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header2">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+
+            <TextView
+                android:id="@+id/discrbtionphonemode"
+                android:layout_width="300dp"
+                android:layout_height="277dp"
+                android:layout_marginTop="60dp"
+                android:gravity="center"
+                android:text="Avoid embarrassing situations and distraction while performing your daily activities and tasks"
+                android:textColor="?attr/textcolor"
+                android:textSize="12pt"
+                android:textStyle="normal|bold|italic"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.6"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/switchphonemode" />
+
+            <Switch
+                android:id="@+id/switchphonemode"
+                android:layout_width="300dp"
+                android:layout_height="65dp"
+                android:layout_marginTop="68dp"
+                android:text="Activate"
+                android:textColor="?attr/textcolor"
+                android:textColorHighlight="#004080"
+                android:textSize="26sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.6"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

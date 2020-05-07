@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="eypcnn">
+        <attr name="backgroundcolor" format="color"/>
+        <attr name="cardbackground" format="color"/>
+        <attr name="textcolor" format="color"/>
+        <attr name="tintcolor" format="color"/>
+        <attr name="buttoncolor" format="color"/>
+        <attr name="backgroundhedar" format="boolean"/>
+        <attr name="backgrounddark" format="boolean"/>
+        <attr name="backgroundmainscrren" format="boolean"/>
+        <attr name="backgroundbody" format="boolean"/>
+        <attr name="change" format="boolean"/>
+        <attr name="createnod" format="color"/>
+        <attr name="text" format="string"/>
+    </declare-styleable>>
+</resources>

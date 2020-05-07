@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/map"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapsActivity">
+
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="horizontal">
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="248dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:hint="@string/srg2"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/search_bt"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_weight="0.5"
+
+        android:text="@string/srg"
+
+        android:background="@drawable/rounded_b"
+        tools:ignore="OnClick" />
+    <Button
+        android:id="@+id/SAVE"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+
+
+        android:background="@drawable/rounded_b"
+        android:text="SAVE"/>
+
+
+
+</LinearLayout>
+
+</fragment>

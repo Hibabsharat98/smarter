@@ -1,0 +1,43 @@
+<resources>
+
+    <!-- Base application theme. -->
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>//
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>//
+        <item name="colorAccent">@color/colorAccent</item>//
+        <item name="backgroundcolor" >#004080</item>//
+        <item name="backgroundhedar">@drawable/header</item>//
+        <item name="backgrounddark">@drawable/baceground</item>//
+        <item name="cardbackground" >#ffffff</item>//
+        <item name="backgroundmainscrren">@drawable/body3</item>//
+        <item name="change">@drawable/dark</item>//
+        <item name="text">Dark Mode</item>//
+        <item name="backgroundbody">@drawable/body2</item>//
+        <item name="textcolor" >#000000</item>//
+        <item name="tintcolor" >#000000</item>
+        <item name="buttoncolor" >#004080</item>//
+        <item name="createnod" >#ffffff</item>//
+    </style>
+    <style name="darkTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#212121</item>
+        <item name="colorPrimaryDark">#000000</item>
+        <item name="colorAccent">#A18764</item>
+        <item name="backgroundcolor" >#303030 </item>
+        <item name="text">Night Mode</item>
+        <item name="backgroundhedar">@drawable/header16</item>
+        <item name="backgrounddark">@drawable/backgrounddark</item>
+        <item name="backgroundmainscrren">@drawable/body16</item>
+        <item name="backgroundbody">@drawable/body16</item>
+        <item name="change">@drawable/appthem</item>
+        <item name="cardbackground" >#424242</item>
+        <item name="textcolor" >#ffffff</item>
+        <item name="tintcolor" >#000000</item>
+        <item name="buttoncolor" >#A18764</item>
+        <item name="createnod" >#303030</item>//
+
+    </style>
+
+</resources>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".drivemode">
+
+    <TextView
+        android:id="@+id/header3"
+        android:layout_width="324dp"
+        android:layout_height="132dp"
+        android:background="?attr/backgroundhedar"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/titledeivemode"
+        android:layout_width="192dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="25dp"
+        android:paddingLeft="13dp"
+        android:text="Automated"
+        android:textColor="#FFFFFF"
+        android:textSize="14pt"
+        app:fontFamily="casual"
+        app:layout_constraintEnd_toStartOf="@+id/logetimeline"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/captiondrivemode"
+        android:layout_width="161dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:paddingLeft="13dp"
+        android:text="Drive Mode"
+        android:textColor="#FFFFFF"
+        android:textSize="8pt"
+        app:fontFamily="casual"
+        app:layout_constraintEnd_toStartOf="@+id/logedrivemode"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titledeivemode" />
+
+    <ImageView
+        android:id="@+id/logedrivemode"
+        android:layout_width="35pt"
+        android:layout_height="35pt"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/header2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/titledeivemode"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.368"
+        app:srcCompat="@drawable/drive2" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="?attr/backgroundbody"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header3">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/discrbtiondrivemode"
+                android:layout_width="245dp"
+                android:layout_height="145dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="“In a split second, you could ruin your future, injure or kill others, and tear a hole in the heart of everyone you love.” "
+                android:textColor="?attr/textcolor"
+                android:textSize="13sp"
+                android:textStyle="bold|italic"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/disabledrivemode" />
+
+            <Switch
+                android:id="@+id/switchdrivemode"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="16dp"
+                android:text="Activate"
+                android:textColor="?attr/textcolor"
+                android:textSize="35sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/disabledrivemode"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="36dp"
+                android:background="@drawable/rounded_b"
+                android:freezesText="true"
+                android:text="Disable application"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textIsSelectable="false"
+                android:textSize="10pt"
+                android:textStyle="bold|italic"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/switchdrivemode" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

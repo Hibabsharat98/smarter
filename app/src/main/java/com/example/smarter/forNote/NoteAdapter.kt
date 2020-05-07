@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.BaseAdapter
+import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
@@ -25,6 +26,7 @@ class NoteAdapter(private val context: Context,
 
         val rowView = inflater.inflate(R.layout.note_list, parent, false)
         rowView.findViewById<TextView>(R.id.for_text).text = dataitem.get("text")
+//        rowView.findViewById<Button>(R.id.saveloc).=dataitem.get("location")
 
 
         Picasso.get()

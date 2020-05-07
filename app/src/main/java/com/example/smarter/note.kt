@@ -3,19 +3,17 @@ package com.example.smarter
 import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.AsyncTask
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
-import android.widget.LinearLayout
 import android.widget.ListView
 import android.widget.ProgressBar
+import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.ItemTouchHelper
-import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.smarter.forNote.NoteAdapter
 import com.example.smarter.forNote.NoteData
-import kotlinx.android.synthetic.main.activity_note.*
+import kotlinx.android.synthetic.main.note_list.*
 import org.json.JSONObject
 import java.net.URL
 
@@ -93,7 +91,13 @@ class note : AppCompatActivity() {
 
                 map["text"] = singleUser.getString("text")
                 map["Images"] = singleUser.getString("Images")
+                map["lat"]=singleUser.getString("lat")
+                map["long"]=singleUser.getString("long")
                 dataList.add(map)
+                saveloc.setOnClickListener( map["lat"],map["long"]) {
+println("hello location")
+                }
+
             }
         }
             else{
@@ -101,6 +105,7 @@ class note : AppCompatActivity() {
             }
 
             findViewById<ListView>(R.id.listView).adapter = NoteAdapter(this@note, dataList)
+
         }
     }
 
@@ -129,4 +134,13 @@ class note : AppCompatActivity() {
         startActivity(Intent(this,mainscrren::class.java))
         finish()
     }
+    private fun Button.setOnClickListener(lat: String?, long: String?, function: () -> Unit) {
+        println("LAT is $lat")
+        println("long is $long")
+
+
+    }
 }
+
+
+
